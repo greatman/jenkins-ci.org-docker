@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get update && apt-get install -y wget git curl zip
 RUN apt-get update && apt-get install -y --no-install-recommends openjdk-7-jdk
-RUN apt-get update && apt-get install -y maven ant ruby rbenv make
+RUN apt-get update && apt-get install -y maven
 
 RUN wget -q -O - http://pkg.jenkins-ci.org/debian-stable/jenkins-ci.org.key | sudo apt-key add -
 RUN echo deb http://pkg.jenkins-ci.org/debian binary/ >> /etc/apt/sources.list
